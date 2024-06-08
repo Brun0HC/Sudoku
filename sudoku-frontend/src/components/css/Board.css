@@ -1,0 +1,47 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 0;
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid black;
+  }
+  
+  .sudoku-row {
+    display: contents;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+      
+  .cell:nth-child(3n) {
+    border-right: 2px solid black;
+  }
+
+  .cell:nth-child(3n+1){
+    border-left: 2px solid black;
+  }
+  
+  .sudoku-row:nth-child(3n) .cell{
+    border-bottom: 2px solid black;
+  }
+
+  .sudoku-row:nth-child(3n+1) .cell{
+    border-top: 2px solid black;
+  }
+
+  .sudoku-row:first-child .cell{
+    border-top: 2px solid black;
+  }
+
+  .sudoku-row .cell:first-child{
+    border-left: 2px solid black;
+  }
+
+  

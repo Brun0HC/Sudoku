@@ -1,0 +1,45 @@
+/* Sudoku.css */
+
+.sudoku-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.difficulty-select {
+  margin-bottom: 20px;
+}
+
+.difficulty-select label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.difficulty-select select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.board-container {
+  margin-bottom: 20px;
+}
+
+.verify-button {
+  text-align: center;
+}
+
+.verify-button button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.verify-button button:hover {
+  background-color: #0056b3;
+}
